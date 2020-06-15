@@ -49,7 +49,7 @@ Bandpass filter – Microstrip Coupled Line Sizes
 
 Momentum Simulation After Integrating The Coupler with the Filter
 
-<img width="897" alt="image" src="https://user-images.githubusercontent.com/66625688/84615946-5f93b880-ae98-11ea-9f36-53599aa9426c.png">
+<img width="1092" alt="image" src="https://user-images.githubusercontent.com/66625688/84616138-0e37f900-ae99-11ea-9b60-13a88a1dc67f.png">
 
 Antenna Calculation \
 The length of the dipole half wave antenna is calculated to be 15 mm
@@ -57,7 +57,7 @@ The length of the dipole half wave antenna is calculated to be 15 mm
 <img width="884" alt="image" src="https://user-images.githubusercontent.com/66625688/84615996-8a7e0c80-ae98-11ea-84cf-4675ff5a899c.png">
 
 
-Smith Chart Matching with Antenna Load \
+Smith Chart Matching with Antenna Load 
 
 * Smith Chart is needed to match the 50 Ohm lines with the 72+j21.5 Ohm load 
 * Converts antenna loads to 50 ohm ports.
