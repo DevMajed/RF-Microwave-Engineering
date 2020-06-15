@@ -15,7 +15,7 @@ Layout
 
 Substrate 
 
-<img width="354" alt="image" src="https://user-images.githubusercontent.com/66625688/84615201-5bff3200-ae96-11ea-8e7c-0358a03be593.png">
+<img width="655" alt="image" src="https://user-images.githubusercontent.com/66625688/84615247-86e98600-ae96-11ea-8c7d-c3cd154e1b36.png">
 
 Equation Based
 
