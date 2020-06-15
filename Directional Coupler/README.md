@@ -20,3 +20,7 @@ The asymmetrical solutions is:
 
 
 
+Here we can say that port 1 is the input port, port 2 is the through port, port 3 is the coupled port, and port 4 is the isolation port /
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/66625688/84614203-679d2980-ae93-11ea-9f49-a48ec86969b5.png">
+
+
