@@ -1,0 +1,19 @@
+(nil
+    spare_node_list(6)
+       (
+            "DA_CLFilter1.N__16"
+            "DA_CLFilter1.N__29"
+            "DA_CLFilter1.N__30"
+            "DA_CLFilter1.N__31"
+            "P1"
+            "P2"
+        )
+    spare_inst_list(5)
+       (
+            "DA_CLFilter1.CLin1"
+            "DA_CLFilter1.CLin2"
+            "DA_CLFilter1.CLin3"
+            "DA_CLFilter1.CLin4"
+            "DA_CLFilter1.CLin5"
+        )
+)

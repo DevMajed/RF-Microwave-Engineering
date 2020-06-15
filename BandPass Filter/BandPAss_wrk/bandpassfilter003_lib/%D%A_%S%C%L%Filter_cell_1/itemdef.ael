@@ -1,0 +1,13 @@
+create_item("DA_SCLFilter_cell_1","Stripline Coupled-Line Filter","DA_SCLFilter",16,-1,"SCLFilter.bmp","Component Parameters",NULL,"%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","DA_SCLFilter_cell_1","%t%b%r%38?%:\n%39?all_parm%A%:%30?%s%:%k%?[%1i]%;=%s%;%;%;%e%e%;","SCLFilter",3,NULL,0,
+create_parm("Subst","Substrate Instance Name",262144,"StringAndReferenceFormSet",-2,prm("StringAndReference","\"SSub1\"")),
+create_parm("Fs1","Frequency at Lower Stopband Edge",65536,"StdFormSet",0,prm("StdForm","1.8 GHz")),
+create_parm("Fp1","Frequency at Lower Passband Edge",65536,"StdFormSet",0,prm("StdForm","2 GHz")),
+create_parm("Fp2","Frequency at Upper Passband Edge",65536,"StdFormSet",0,prm("StdForm","2.2 GHz")),
+create_parm("Fs2","Frequency at Upper Stopband Edge",65536,"StdFormSet",0,prm("StdForm","2.4 GHz")),
+create_parm("Ap","Attenuation (dB) at Passband Edge [or Ripple for Chebyshev]",65536,"StdFormSet",13,prm("StdForm","3 dB")),
+create_parm("As","Attenuation (dB) at Stopband Edge",65536,"StdFormSet",13,prm("StdForm","20 dB")),
+create_parm("N","Number of Filter Sections (set N=0 to compute N)",131072,"StdFormSet",-1,prm("StdForm","0")),
+create_parm("ResponseType","Type of Frequency Response",134656,"DA_FilterFormSet",-1,prm("DA_MaxFlatFiltForm")),
+create_parm("Zo","Desired Input/Output Impedance",65536,"StdFormSet",1,prm("StdForm","50 Ohm")),
+create_parm("CouplingType","Type of Input/Output Coupling",134144,"DA_PassiveFilterTransformerTapFormSet",-1,prm("DA_PassiveFilterTransformerForm")),
+create_parm("Delta","Length Added to Filter Sections for Tuning",65536,"StdFormSet",5,prm("StdForm","0")));

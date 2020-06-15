@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 490.shp Nov 12 2018, MINT version 4
+    (64-bit windows built: Tue Nov 13, 2018 02:20:54 +0000)
+
+Warning detected by hpeesofsim in Substrate model during netlist flattening.
+    Simulations referencing substrate `DA_LCBandpassDT1.MSub1' will not include metal loss
+    because metal thickness is zero.
+
+SP SP1[1] <bandpassfilter003_lib:SA_LCBandpassDT1_cell_1:schematic>   freq=(5 GHz->15 GHz)
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(0.000000) < MinRecommendValue(0.000008) OR UserValue > MaxRecommendValue(0.076200) for 'W' in `DA_LCBandpassDT1.TL2'
+
+
+
+Resource usage:
+  Total stopwatch time     =     1.30 seconds.
+

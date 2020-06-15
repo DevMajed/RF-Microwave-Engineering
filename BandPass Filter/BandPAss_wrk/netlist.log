@@ -1,0 +1,51 @@
+; Top Design: "bandpassfilter003_lib:cell_1:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="bandpassfilter003_lib:cell_1:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: bandpassfilter003_lib
+; Cell Name: DA_CLFilter1_cell_1
+; View Name: schematic
+define DA_CLFilter1_cell_1 ( P1  P2 ) 
+parameters  Subst="MSub1"  Fs1=1.8 GHz  Fp1=2 GHz  Fp2=2.2 GHz  Fs2=2.4 GHz  Ap=3 dB  As=20 dB  N=0  ResponseType=1  Zo=50 Ohm  CouplingType=0  Delta=0 
+MCFIL:CLin5  N__29 P2 Subst="MSub1" W=w1 mil S=8.185 mil L=207.735 mil 
+MCFIL:CLin4  N__30 N__29 Subst="MSub1" W=w2 mil S=25.99 mil L=205.191 mil 
+MCFIL:CLin3  N__31 N__30 Subst="MSub1" W=w3 mil S=29.551 mil L=205.049 mil 
+MCFIL:CLin2  N__16 N__31 Subst="MSub1" W=w2 mil S=25.99 mil L=205.191 mil 
+MCFIL:CLin1  P1 N__16 Subst="MSub1" W=w1 mil S=8.185 mil L=207.735 mil 
+
+w1=55.197
+w3=60.713
+w2=60.424
+end DA_CLFilter1_cell_1
+
+model MSub1 MSUB H=20 mil Er=2.2 Mur=1 Cond=4.1e7 Hu=3.93701e+34 mil T=1 mil TanD=0.009 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+DA_CLFilter1_cell_1:DA_CLFilter1  P1 P2 Subst="MSub1" Fs1=8.5 GHz Fp1=9.5 GHz Fp2=10.5 GHz Fs2=11.5 GHz Ap=3 dB As=30 dB N=5 ResponseType=2 Zo=50 Ohm CouplingType=0 Delta=0 mil 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=5 GHz Stop=15 GHz Step=0.1 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+
+w1=55.197 tune{ 27.5985 to 82.7955 by 1 }
+w3=60.713 tune{ 30.3565 to 91.0695 by 1 }
+w2=60.424 tune{ 30.212 to 90.636 by 1 }
+MCFIL:CLin1  P3 N__4 Subst="MSub1" W=w1 mil S=8.185 mil L=Le1 mil 
+MCFIL:CLin2  N__4 N__6 Subst="MSub1" W=w2 mil S=25.99 mil L=Le2 mil 
+MCFIL:CLin3  N__6 N__7 Subst="MSub1" W=w3 mil S=29.551 mil L=Le3 mil 
+MCFIL:CLin4  N__7 N__5 Subst="MSub1" W=w2 mil S=25.99 mil L=Le2 mil 
+MCFIL:CLin5  N__5 P4 Subst="MSub1" W=w1 mil S=8.185 mil L=Le1 mil 
+Port:TermG1  P3 0 Num=1 Z=50 Ohm Noise=yes 
+Port:TermG2  P4 0 Num=2 Z=50 Ohm Noise=yes 
+
+Le2=205.191
+Le3=205.049
+Le1=207.735

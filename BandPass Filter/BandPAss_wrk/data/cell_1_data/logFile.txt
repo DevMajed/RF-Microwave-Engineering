@@ -1,0 +1,15 @@
+
+hpeesofsim (*) 490.shp Nov 12 2018, MINT version 4
+    (64-bit windows built: Tue Nov 13, 2018 02:20:54 +0000)
+
+
+6 spare nodes and 5 spare devices are removed.
+The details can be found in file 'C:\Users\Michael\OneDrive - UMASS Dartmouth\ECE435 Microwave & RF Engineering\filteresign\bandpassfilter003\data\.\cell_1_data\spare_removal.txt'.
+
+
+SP SP1[1] <bandpassfilter003_lib:cell_1:schematic>   freq=(5 GHz->15 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     1.19 seconds.
+

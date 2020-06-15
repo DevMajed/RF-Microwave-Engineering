@@ -1,0 +1,18 @@
+
+hpeesofsim (*) 490.shp Nov 12 2018, MINT version 4
+    (64-bit windows built: Tue Nov 13, 2018 02:20:54 +0000)
+
+
+OPTIM Optim1[1] <bandpassfilter003_lib:OA_CLFilter1_cell_1:schematic>  optIter=(0->25)
+
+SP Optim1[1].SP1[0] <bandpassfilter003_lib:OA_CLFilter1_cell_1:schematic>  optIter=0  freq=(9.5 GHz->10.5 GHz)
+
+Iteration/Trial #0:
+  CurrentEF: 1.03198122920795
+  Optimization variables:
+    Delta = 0
+Optim1[1] terminated due to no more improvement 
+
+Resource usage:
+  Total stopwatch time     =     1.99 seconds.
+

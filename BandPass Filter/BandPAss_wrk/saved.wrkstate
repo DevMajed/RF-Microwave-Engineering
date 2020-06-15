@@ -1,0 +1,8 @@
+<!DOCTYPE SaveWorkspaceState>
+<SaveWorkspaceState>
+    <Windows>
+        <Layout lib="bandpassfilter003_lib" width="1278" height="1368" cell="cell_1" geom="1,0,1,1273,0,1278,1368,2560,1440" view="layout" x1="1273" y1="0"/>
+        <DDS name="DA_CLFilter.dds"/>
+    </Windows>
+    <MainWindowTab tab="1"/>
+</SaveWorkspaceState>

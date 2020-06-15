@@ -1,0 +1,4 @@
+mesh_convergence_plot OFF;
+save_fields_for nofrequencies;
+mask 1 expandDir 0;
+SPARAM_OUTPUTFORMAT CITIFILE;

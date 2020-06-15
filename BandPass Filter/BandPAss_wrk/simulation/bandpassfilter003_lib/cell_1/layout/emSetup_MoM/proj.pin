@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pin_list version="1.0">
+  <!-- note: all coordinates are in meter -->
+  <pin>
+    <name>P3</name>
+    <net>P3</net>
+    <layout>
+      <shape>
+        <layer>1</layer>
+        <purpose>-1</purpose>
+        <point>
+          <x>-0.0074400918</x>
+          <y>-0.1367858199</y>
+        </point>
+      </shape>
+    </layout>
+  </pin>
+  <pin>
+    <name>P4</name>
+    <net>P4</net>
+    <layout>
+      <shape>
+        <layer>1</layer>
+        <purpose>-1</purpose>
+        <point>
+          <x>0.0188717936</x>
+          <y>-0.1468571739</y>
+        </point>
+      </shape>
+    </layout>
+  </pin>
+</pin_list>

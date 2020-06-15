@@ -1,0 +1,13 @@
+create_item("DA_LCBandpassDT_cell_1","Lumped Element Band Pass Filter","DA_LCBandpassDT",16,-1,"LCBandpassDT.bmp","Component Parameters",NULL,"%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","DA_LCBandpassDT_cell_1","%t%b%r%38?%:\n%39?all_parm%A%:%30?%s%:%k%?[%1i]%;=%s%;%;%;%e%e%;","LCBandpassDT",3,NULL,0,
+create_parm("Fs1","Lower Stopband Edge Frequency",66048,"StdFormSet",0,prm("StdForm",".5 GHz")),
+create_parm("Fp1","Lower Passband Corner Frequency",66048,"StdFormSet",0,prm("StdForm","1 GHz")),
+create_parm("Fp2","Upper Passband Corner Frequency",66048,"StdFormSet",0,prm("StdForm","2 GHz")),
+create_parm("Fs2","Upper Stopband Edge Frequency",66048,"StdFormSet",0,prm("StdForm","2.5 GHz")),
+create_parm("Ap","Attenuation (dB) at Passband Edges [or Ripple for Chebyshev]",66048,"StdFormSet",13,prm("StdForm","3 dB")),
+create_parm("As","Attenuation (dB) at Stopband Edges",66048,"StdFormSet",13,prm("StdForm","20 dB")),
+create_parm("N","Number of Filter Sections (value will be superceded if frequency/attenuation parameters changed on control window)",131584,"StdFormSet",-1,prm("StdForm","0")),
+create_parm("ResponseType","Type of Frequency Response",134656,"DA_LumpedFilterFormSet",-1,prm("DA_MaxFlatFiltForm")),
+create_parm("MinLorC","Minimum Inductance or Capacitance",134656,"DA_MinimumElementSet",-1,prm("DA_MinimumInductanceForm")),
+create_parm("Rg","Desired Source Impedance",66048,"StdFormSet",1,prm("StdForm","50 Ohm")),
+create_parm("Rl","Desired Load Impedance",66048,"StdFormSet",1,prm("StdForm","50 Ohm")),
+create_parm("MaxRealizations","Maximum Number of Network Realizations",131584,"StdFormSet",-1,prm("StdForm","25")));

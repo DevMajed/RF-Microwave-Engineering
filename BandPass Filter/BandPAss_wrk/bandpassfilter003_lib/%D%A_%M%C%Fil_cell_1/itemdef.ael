@@ -1,0 +1,9 @@
+create_item("DA_MCFil_cell_1","Microstrip Coupled Filter Element","DA_MCFil",16,-1,"MCFil.bmp","Component Parameters",NULL,"%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","DA_MCFil_cell_1","%t%b%r%38?%:\n%39?all_parm%A%:%30?%s%:%k%?[%1i]%;=%s%;%;%;%e%e%;","MCFil",3,NULL,0,
+create_parm("Subst","Substrate Instance Name",262144,"StringAndReferenceFormSet",-2,prm("StringAndReference","\"MSub1\"")),
+create_parm("F","Center Frequency",65536,"StdFormSet",0,prm("StdForm","1 GHz")),
+create_parm("Zoe","Desired Even-Mode Characteristic Impedance",65536,"StdFormSet",1,prm("StdForm","55 Ohm")),
+create_parm("Zoo","Desired Odd-Mode Characteristic Impedance",65536,"StdFormSet",1,prm("StdForm","45 Ohm")),
+create_parm("Zo1","Characteristic Impedance of Input Line at Port 1",66048,"StdFormSet",1,prm("StdForm","50 Ohm")),
+create_parm("Zo2","Characteristic Impedance of Input Line at Port 2",66048,"StdFormSet",1,prm("StdForm","50 Ohm")),
+create_parm("Lphys","Physical Line Length (set to zero if Lelec specified)",65536,"StdFormSet",5,prm("StdForm","0")),
+create_parm("Lelec","Line Length in Wavelengths (set to zero if Lphys specified)",65536,"StdFormSet",-1,prm("StdForm","0.25")));
