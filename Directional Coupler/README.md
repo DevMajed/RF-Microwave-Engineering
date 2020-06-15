@@ -6,5 +6,17 @@ Although this would seem to be a particularly mundane and simple task, these dev
 very important in microwave systems, and very difficult to design and construct.  
 Two of the reasons for this difficulty are our desire for the device to be: \
 1.  Matched 
-2.  Lossless 
+2.  Lossless  \
+Without going into to much math, here are the solutions for the drectional four ports coupler \
+
+The symmetric solutions is: 
+
+![image](https://user-images.githubusercontent.com/66625688/84614065-f8273a00-ae92-11ea-8a51-b03fd517f018.png)
+
+
+The asymmetrical solutions is: 
+
+<img width="906" alt="image" src="https://user-images.githubusercontent.com/66625688/84614143-37558b00-ae93-11ea-8ef4-965ccdfc7525.png">
+
+
 
