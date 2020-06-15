@@ -1,0 +1,5 @@
+jobName=EmPpMsgs
+jobType=emprep
+designName=ratrace1_lib:cell_3:layout
+ruleFilePath=
+addInfo="EM preprocessor messages displayed as DRC errors"

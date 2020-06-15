@@ -1,0 +1,21 @@
+
+hpeesofsim (*) 490.shp Nov 12 2018, MINT version 4
+    (64-bit windows built: Tue Nov 13, 2018 02:20:54 +0000)
+
+Warning detected by hpeesofsim in Substrate model during netlist flattening.
+    Simulations referencing substrate `MSub1' will not include metal loss
+    because metal thickness is zero.
+
+OPTIM Optim1[1] <ratrace1_lib:OA_RRCoupler1_cell_1:schematic>  optIter=(0->25)
+
+SP Optim1[1].SP1[0] <ratrace1_lib:OA_RRCoupler1_cell_1:schematic>  optIter=0  freq=1 GHz
+
+Iteration/Trial #0:
+  CurrentEF: 1
+  Optimization variables:
+    Delta = 0
+Optim1[1] terminated due to no more improvement 
+
+Resource usage:
+  Total stopwatch time     =     2.22 seconds.
+

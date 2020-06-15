@@ -1,0 +1,110 @@
+CITIFILE A.01.01
+#Momentum: B.13.00.433 (*) built: Oct 24 2018 
+#Momentum Date and Time: Mon Nov  4 14:58:25 2019
+
+NAME PortSet1
+
+
+CONSTANT NBR_OF_PORTS 4
+
+VAR freq MAG 2
+
+DATA GAMMA_1[1] RI
+DATA Z0_1[1,1] RI
+DATA LAMBADAI_1[1,1] RI
+
+VAR_LIST_BEGIN
+	 5000000000
+	 1.5e+10
+VAR_LIST_END
+
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+END
+BEGIN
+	 50 ,	 0 
+	 50 ,	 0 
+END
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+END
+CITIFILE A.01.01
+NAME PortSet2
+
+VAR freq MAG 2
+
+DATA GAMMA_2[1] RI
+DATA Z0_2[1,1] RI
+DATA LAMBADAI_2[1,1] RI
+
+VAR_LIST_BEGIN
+	 5000000000
+	 1.5e+10
+VAR_LIST_END
+
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+END
+BEGIN
+	 50 ,	 0 
+	 50 ,	 0 
+END
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+END
+CITIFILE A.01.01
+NAME PortSet3
+
+VAR freq MAG 2
+
+DATA GAMMA_3[1] RI
+DATA Z0_3[1,1] RI
+DATA LAMBADAI_3[1,1] RI
+
+VAR_LIST_BEGIN
+	 5000000000
+	 1.5e+10
+VAR_LIST_END
+
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+END
+BEGIN
+	 50 ,	 0 
+	 50 ,	 0 
+END
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+END
+CITIFILE A.01.01
+NAME PortSet4
+
+VAR freq MAG 2
+
+DATA GAMMA_4[1] RI
+DATA Z0_4[1,1] RI
+DATA LAMBADAI_4[1,1] RI
+
+VAR_LIST_BEGIN
+	 5000000000
+	 1.5e+10
+VAR_LIST_END
+
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+END
+BEGIN
+	 50 ,	 0 
+	 50 ,	 0 
+END
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+END

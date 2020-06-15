@@ -1,0 +1,13 @@
+Automatically determined a snap distance of
+0.0021 mil for layout healing.
+
+--- WARNING -------------------------------------------------------------------
+
+Layout healing changed the layout. The actual
+highest aggregate snap distance was 0.0003 mil.
+Further details have been written to the DRC
+report.
+
+-------------------------------------------------------------------------------
+
+Generating mesh at 15 GHz...

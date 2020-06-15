@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+    <parameter name="Subst" value="&quot;MSub1&quot;"/>
+    <parameter name="F" value="1"/>
+    <parameter name="Zo" value="50 Ohm"/>
+    <parameter name="Delta" value="0 meter"/>
+    <parameter name="W1" value="20"/>
+    <parameter name="W2" value="20"/>
+    <parameter name="W3" value="45"/>
+    <parameter name="Rad" value="110"/>
+</parameters>

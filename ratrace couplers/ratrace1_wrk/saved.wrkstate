@@ -1,0 +1,10 @@
+<!DOCTYPE SaveWorkspaceState>
+<SaveWorkspaceState>
+    <Windows>
+        <Schematic view="schematic" lib="ratrace1_lib" height="2097" x1="-8" geom="1,0,3,1980,264,2037,1758,3840,2160" width="3840" y1="-8" cell="cell_3"/>
+        <Schematic view="schematic" lib="ratrace1_lib" height="2097" x1="-8" geom="1,0,3,2052,324,2037,1758,3840,2160" width="3840" y1="-8" cell="cell_4"/>
+        <Schematic view="schematic" lib="ratrace1_lib" height="1758" x1="1505" geom="1,0,0,1505,147,2037,1758,3840,2160" width="2037" y1="147" cell="cell_6"/>
+        <DDS name="cell_3.dds"/>
+    </Windows>
+    <MainWindowTab tab="1"/>
+</SaveWorkspaceState>

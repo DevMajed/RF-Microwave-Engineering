@@ -1,0 +1,14 @@
+
+hpeesofsim (*) 490.shp Nov 12 2018, MINT version 4
+    (64-bit windows built: Tue Nov 13, 2018 02:20:54 +0000)
+
+Warning detected by hpeesofsim in Substrate model during netlist flattening.
+    Simulations referencing substrate `MSub1' will not include metal loss
+    because metal thickness is zero.
+
+SP SP1[1] <ratrace1_lib:cell_2:schematic>   freq=(5 GHz->15 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     3.95 seconds.
+

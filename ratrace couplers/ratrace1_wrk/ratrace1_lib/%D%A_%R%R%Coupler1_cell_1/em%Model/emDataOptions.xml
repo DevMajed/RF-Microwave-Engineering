@@ -1,0 +1,15 @@
+<emDataViewOptions>
+  <version major="1" minor="2"/>
+  <Options portTerminalPinsNetlistMode="Shorted" enforcePassivity="DuringExtrapolation" symbolNetlistMode="All pins" extrapolationMode="Linear"/>
+  <cellParameters useInterpolation="no">
+    <parameters>
+      <cellParameter name="F" delta="0.1" resolution="1e-05"/>
+      <cellParameter name="Zo" delta="5" resolution="1e-05"/>
+      <cellParameter name="Delta" delta="3.93701 mil" resolution="0.0001 mil"/>
+      <cellParameter name="W1" delta="3.538" resolution="1e-05"/>
+      <cellParameter name="W2" delta="3.538" resolution="1e-05"/>
+      <cellParameter name="W3" delta="6.1853" resolution="1e-05"/>
+      <cellParameter name="Rad" delta="14.907" resolution="1e-05"/>
+    </parameters>
+  </cellParameters>
+</emDataViewOptions>

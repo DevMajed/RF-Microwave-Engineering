@@ -1,0 +1,27 @@
+Momentum Server logfile: momServer.log
+
+EM Model generation from "ratrace1_lib:DA_RRCoupler1_cell_1:emModel"
+  parameterNames = list("F","Zo","Delta","X","Y","Z","Rad")
+  parameterValues = list("1.00000000000000","50.00000000000000","0.00000000000000","0.00089865200000","0.00089865200000","0.00157107000000","0.00330200000000")
+  topLevel design name = "ratrace1_lib:DA_RRCoupler1_cell_1:layout_libserver"
+  instance name = "X1"
+  processID = "16720@DESKTOP-0HBV67D"
+  visible = FALSE
+Connected to external process by processID
+..handle = 17
+..pid = 16720@DESKTOP-0HBV67D
+..name = libserver
+Creating work design ratrace1_lib:DA_RRCoupler1_cell_1:layout_libserver_intermediate
+..new work design opened
+..inserting instance of ratrace1_lib:DA_RRCoupler1_cell_1:layout
+Default value will be used for parameter Subst (= "MSub1")
+..promoting instance pins and ports
+Successfully created the intermediate work design
+Creating work design ratrace1_lib:DA_RRCoupler1_cell_1:layout_libserver
+..new work design opened
+..inserting instance of ratrace1_lib:DA_RRCoupler1_cell_1:layout_libserver_intermediate
+Default value will be used for parameter Subst (= "MSub1")
+..promoting instance pins and ports
+Successfully created the work design
+..ERROR: The associated schematic of ratrace1_lib:DA_RRCoupler1_cell_1:layout, i.e., "ratrace1_lib:DA_RRCoupler1_cell_1:schematic" (schematic) , defines variables that conflict with the cell parameters or variables used in the substrate. Variables used in a substrate should be put in a defaults design.
+..sending DONE to parent

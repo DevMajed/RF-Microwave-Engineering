@@ -1,0 +1,5 @@
+create_item("DA_RRCoupler1_cell_1","Rat-Race Coupler","DA_RRCoupler",16,-1,"RRCoupler.bmp","Component Parameters",NULL,"%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","DA_RRCoupler1_cell_1","%t%b%r%38?%:\n%39?all_parm%A%:%30?%s%:%k%?[%1i]%;=%s%;%;%;%e%e%;","RRCoupler",3,NULL,0,
+create_parm("Subst","Substrate Instance Name",262144,"StringAndReferenceFormSet",-2,prm("StringAndReference","\"MSub1\"")),
+create_parm("F","Subnetwork 1",66560,"StdFormSet",-1,prm("StdForm","1 ")),
+create_parm("Zo","Characteristic Impedance",65536,"StdFormSet",1,prm("StdForm","50 Ohm")),
+create_parm("Delta","Subnetwork 0 meter",66560,"StdFormSet",5,prm("StdForm","0 meter")));

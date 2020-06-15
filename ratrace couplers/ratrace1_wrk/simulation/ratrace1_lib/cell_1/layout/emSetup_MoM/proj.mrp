@@ -1,0 +1,54 @@
+Using the minimal snap distance of 0.0004 mil
+(4 layout resolution points) for layout healing.
+
+--- WARNING -------------------------------------------------------------------
+
+Pin "P1" on mask 1 is not fully connected to a
+conductive piece of mask layout.
+Only FEM simulations are able to process such
+pins.
+
+-------------------------------------------------------------------------------
+
+
+--- WARNING -------------------------------------------------------------------
+
+Pin "P2" on mask 1 is not fully connected to a
+conductive piece of mask layout.
+Only FEM simulations are able to process such
+pins.
+
+-------------------------------------------------------------------------------
+
+
+--- WARNING -------------------------------------------------------------------
+
+Pin "P3" on mask 1 is not fully connected to a
+conductive piece of mask layout.
+Only FEM simulations are able to process such
+pins.
+
+-------------------------------------------------------------------------------
+
+
+--- WARNING -------------------------------------------------------------------
+
+Pin "P4" on mask 1 is not fully connected to a
+conductive piece of mask layout.
+Only FEM simulations are able to process such
+pins.
+
+-------------------------------------------------------------------------------
+
+Generating mesh at 10 GHz...
+
+--- ERROR ---------------------------------------------------------------------
+
+At least one port pin or bondwire end is not
+fully connected to a conductive part of the
+design (see the layout processing report for
+details).
+This setup is invalid for a Momentum simulation.
+
+-------------------------------------------------------------------------------
+
