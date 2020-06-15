@@ -1,0 +1,5 @@
+<!DOCTYPE DisplayAttributes>
+<Lpp_Differences_List>
+    <LPP protect="0" layer="ads_instance" purpose="ads_label"/>
+    <LPP visible="1" protect="0" layer="ads_instance" purpose="drawing"/>
+</Lpp_Differences_List>

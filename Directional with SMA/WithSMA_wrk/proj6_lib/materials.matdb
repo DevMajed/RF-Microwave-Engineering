@@ -1,0 +1,14 @@
+<!DOCTYPE Materials>
+<Materials>
+    <Conductors>
+        <Conductor thermal_conductivity="318" parmtype="1" mur_real="1" mur_imag="" thermal_conductivity_in_z="" name="Gold" real="4.1e7 Siemens/m" imag="" heat_capacity="2.49E+06" electron_path="" tc1="" tnom="" tc2=""/>
+    </Conductors>
+    <Dielectrics>
+        <Dielectric thermal_conductivity="25.25" er_real="9.6" mur_real="1" mur_imag="" thermal_conductivity_in_z="" name="Alumina" er_loss="" loss_type="1" lowfreq="1 KHz" valuefreq="1 GHz" heat_capacity="1.73E+06" electron_path="" er_imag="" highfreq="1 THz"/>
+        <Dielectric thermal_conductivity="" er_real="3.05" mur_real="1" mur_imag="" thermal_conductivity_in_z="" name="GIL_GML1000" er_loss="0.004" loss_type="1" lowfreq="1 KHz" valuefreq="10.0 GHz" heat_capacity="" electron_path="" er_imag="" highfreq="1 THz"/>
+        <Dielectric thermal_conductivity="" er_real="2.20" mur_real="1" mur_imag="" thermal_conductivity_in_z="" name="Rogers_RT_Duroid5880" er_loss="0.0009" loss_type="1" lowfreq="1 KHz" valuefreq="10.0 GHz" heat_capacity="" electron_path="" er_imag="" highfreq="1 THz"/>
+        <Dielectric thermal_conductivity="" er_real="3.0" mur_real="1" mur_imag="" thermal_conductivity_in_z="" name="RogersRO3003" er_loss="8.7e-4" loss_type="1" lowfreq="1 KHz" valuefreq="3.0 GHz" heat_capacity="" electron_path="" er_imag="" highfreq="1 THz"/>
+    </Dielectrics>
+    <Semiconductors/>
+    <roughness/>
+</Materials>

@@ -1,0 +1,40 @@
+; Top Design: "proj6_lib:cell_2:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="proj6_lib:cell_2:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: proj6_lib
+; Cell Name: cell_1
+; View Name: emModel
+define cell_1 ( P1  P2  P3  P4  Ref=0 ) 
+;parameters 
+; MomCmpt model has node 0 as implicit reference. Ref node will be ignored and assumed to be grounded!
+em_data_name="proj6_lib:cell_1:emModel"
+MomCmpt:em_data  P1 P2 P3 P4 \
+    name=em_data_name \
+    paramFile="" \
+    modelFile="C:/Users/Michael/OneDrive - UMASS Dartmouth/ECE435 Microwave & RF Engineering/proj6/proj6_lib/cell_1/em%Model/model.ndx" \
+    ModelReuse=1 \
+    ModelType="MOMMW" \
+    ExtrapolationMode="linear" \
+    EnforcePassivity=-1
+end cell_1
+
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=8 GHz Stop=12 GHz Step=1.0 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+cell_1:X1  N__6 N__5 N__4 N__7 
+Port:TermG1  N__6 0 Num=1 Z=50 Ohm Noise=yes 
+Port:TermG2  N__5 0 Num=2 Z=50 Ohm Noise=yes 
+Port:TermG3  N__4 0 Num=3 Z=50 Ohm Noise=yes 
+Port:TermG4  N__7 0 Num=4 Z=50 Ohm Noise=yes 
