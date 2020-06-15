@@ -1,0 +1,13 @@
+BEGIN_SUBSTRATE
+2 __SubstrateLayer1
+1 __ExpandLayer__TOP_6
+0 __TOP
+END_SUBSTRATE
+BEGIN_MASK
+12 diel2
+6 bond
+5 hole
+3 resi
+2 cond2
+1 cond
+END_MASK

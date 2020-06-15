@@ -1,0 +1,13 @@
+<!DOCTYPE Materials>
+<Materials>
+    <Conductors>
+        <Conductor tnom="" tc1="" imag="" heat_capacity="" real="4.1e+07 Siemens/m" parmtype="1" name="cond" thermal_conductivity="" tc2="" mur_real="1" mur_imag="" electron_path="" thermal_conductivity_in_z=""/>
+    </Conductors>
+    <Dielectrics>
+        <Dielectric er_imag="" highfreq="1 THz" valuefreq="1 GHz" lowfreq="1 KHz" heat_capacity="1.73E+06" er_real="9.6" er_loss="" name="Alumina" thermal_conductivity="25.25" mur_real="1" mur_imag="" loss_type="1" electron_path="" thermal_conductivity_in_z=""/>
+        <Dielectric er_imag="" highfreq="" valuefreq="" lowfreq="" heat_capacity="" er_real="1" er_loss="0" name="AIR" thermal_conductivity="" mur_real="1" mur_imag="0" loss_type="0" electron_path="" thermal_conductivity_in_z=""/>
+        <Dielectric er_imag="" highfreq="" valuefreq="" lowfreq="" heat_capacity="" er_real="9.6" er_loss="0.0001" name="Subst_1" thermal_conductivity="" mur_real="1" mur_imag="0" loss_type="0" electron_path="" thermal_conductivity_in_z=""/>
+    </Dielectrics>
+    <Semiconductors/>
+    <roughness/>
+</Materials>

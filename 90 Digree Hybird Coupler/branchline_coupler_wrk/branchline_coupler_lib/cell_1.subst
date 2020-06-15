@@ -1,0 +1,21 @@
+<!DOCTYPE Substrate>
+<SubstrateModel>
+    <stack BAL_NUM="0" BAL_TYPE="NONE">
+        <material BAL_NUM="0" materialname="AIR" BAL_TYPE="INHERIT"/>
+        <interface BAL_NUM="0" thick="0" materialname="PERFECT_CONDUCTOR" groundplane="1" BAL_TYPE="NONE" thickunit="micron"/>
+        <material BAL_NUM="0" thick="10" materialname="Subst_1" BAL_TYPE="INHERIT" thickunit="mil"/>
+        <interface BAL_NUM="0" thick="0" materialname="" BAL_TYPE="INHERIT" thickunit="micron"/>
+        <material BAL_NUM="0" materialname="AIR" BAL_TYPE="INHERIT"/>
+    </stack>
+    <layers>
+        <layer processRole="1" angle="90.0" thick="0.5" materialname="cond" toprough="" expand="1" sheet="0" thickunit="mil" index="1" negative="0" pinsOnly="0" subtype="0" layer="1" precedence="1" bottomrough=""/>
+        <layer processRole="1" angle="90.0" thick="0" materialname="PERFECT_CONDUCTOR" toprough="" expand="0" sheet="1" thickunit="mil" index="1" negative="0" pinsOnly="0" subtype="0" layer="2" precedence="1" bottomrough=""/>
+        <layer processRole="1" angle="90.0" thick="0" materialname="PERFECT_CONDUCTOR" toprough="" expand="0" sheet="1" thickunit="mil" index="1" negative="0" pinsOnly="0" subtype="0" layer="3" precedence="1" bottomrough=""/>
+        <layer processRole="1" angle="90.0" thick="0" materialname="PERFECT_CONDUCTOR" toprough="" expand="0" sheet="1" thickunit="mil" index="1" negative="0" pinsOnly="0" subtype="0" layer="6" precedence="1" bottomrough=""/>
+    </layers>
+    <vias>
+        <via processRole="4" platingdielectricmaterial="AIR" platingenabled="0" index1="0" materialname="PERFECT_CONDUCTOR" platingthicknessunit="micron" index2="1" subtype="0" layer="12" precedence="1" rough="" platingthickness=""/>
+        <via processRole="4" platingdielectricmaterial="AIR" platingenabled="0" index1="0" materialname="PERFECT_CONDUCTOR" platingthicknessunit="micron" index2="1" subtype="0" layer="5" precedence="1" rough="" platingthickness=""/>
+    </vias>
+    <substrates/>
+</SubstrateModel>

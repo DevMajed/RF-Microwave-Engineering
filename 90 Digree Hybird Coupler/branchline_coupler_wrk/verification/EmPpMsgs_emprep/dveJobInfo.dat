@@ -1,0 +1,5 @@
+jobName=EmPpMsgs_emprep
+jobType=emprep
+designName=branchline_coupler_lib:cell_1:layout_emprep_emprep
+ruleFilePath=
+addInfo="EM preprocessor messages displayed as DRC errors"

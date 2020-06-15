@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<abl:AgilentBoardLink xmlns:abl="http://agilent.com/abl" version="0.3">
+  <abl:Shapes>
+    <abl:oaLine oaType="Line" layerNum="1" purposeNum="-1" hasPin="true" pinName="P1" termName="P1">
+      <abl:GenPolyline width="0">
+        <abl:CenterLine hasArcs="false">
+          <abl:Points>-9.8943,4.9471 -9.8943,-138.8871</abl:Points>
+        </abl:CenterLine>
+      </abl:GenPolyline>
+    </abl:oaLine>
+    <abl:oaDot oaType="Dot" layerNum="1"  purposeNum="-1" hasPin="true" pinName="P1" termName="P1">
+      <abl:Location x="-9.8943" y="0.0000" />
+      <abl:DotSize width="0" height="0" />
+    </abl:oaDot>
+    <abl:oaLine oaType="Line" layerNum="1" purposeNum="-1" hasPin="true" pinName="P2" termName="P2">
+      <abl:GenPolyline width="0">
+        <abl:CenterLine hasArcs="false">
+          <abl:Points>116.5243,4.9471 116.5243,-138.8871</abl:Points>
+        </abl:CenterLine>
+      </abl:GenPolyline>
+    </abl:oaLine>
+    <abl:oaDot oaType="Dot" layerNum="1"  purposeNum="-1" hasPin="true" pinName="P2" termName="P2">
+      <abl:Location x="116.5243" y="0.0000" />
+      <abl:DotSize width="0" height="0" />
+    </abl:oaDot>
+    <abl:oaLine oaType="Line" layerNum="1" purposeNum="-1" hasPin="true" pinName="P3" termName="P3">
+      <abl:GenPolyline width="0">
+        <abl:CenterLine hasArcs="false">
+          <abl:Points>116.5243,4.9471 116.5243,-138.8871</abl:Points>
+        </abl:CenterLine>
+      </abl:GenPolyline>
+    </abl:oaLine>
+    <abl:oaDot oaType="Dot" layerNum="1"  purposeNum="-1" hasPin="true" pinName="P3" termName="P3">
+      <abl:Location x="116.5243" y="-133.9400" />
+      <abl:DotSize width="0" height="0" />
+    </abl:oaDot>
+    <abl:oaLine oaType="Line" layerNum="1" purposeNum="-1" hasPin="true" pinName="P4" termName="P4">
+      <abl:GenPolyline width="0">
+        <abl:CenterLine hasArcs="false">
+          <abl:Points>-9.8943,4.9471 -9.8943,-138.8871</abl:Points>
+        </abl:CenterLine>
+      </abl:GenPolyline>
+    </abl:oaLine>
+    <abl:oaDot oaType="Dot" layerNum="1"  purposeNum="-1" hasPin="true" pinName="P4" termName="P4">
+      <abl:Location x="-9.8943" y="-133.9400" />
+      <abl:DotSize width="0" height="0" />
+    </abl:oaDot>
+    <abl:oaPolygon oaType="Polygon" layerNum="1" purposeNum="-1" hasPin="false">
+    <abl:Properties>
+    </abl:Properties>
+      <abl:GenPolygon numHoles="1">
+        <abl:OuterBoundary hasArcs="false">
+          <abl:Points>111.5772,9.3050 -4.9472,9.3050 -4.9472,4.9471 -9.8943,4.9471 -9.8943,-138.8871 -4.9472,-138.8871 -4.9472,-143.2450 111.5772,-143.2450 111.5772,-138.8871 116.5243,-138.8871 116.5243,4.9471 111.5772,4.9471 111.5772,9.3050</abl:Points>
+        </abl:OuterBoundary>
+        <abl:InnerBoundaries>
+          <abl:InnerBoundary hasArcs="false">
+            <abl:Points>-0.0001,-124.6350 -0.0001,-9.3050 106.6301,-9.3050 106.6301,-124.6350 -0.0001,-124.6350</abl:Points>
+        </abl:InnerBoundary>
+          </abl:InnerBoundaries>
+      </abl:GenPolygon>
+    </abl:oaPolygon>
+  </abl:Shapes>
+</abl:AgilentBoardLink>

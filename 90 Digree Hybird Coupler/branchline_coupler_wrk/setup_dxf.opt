@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<AdsTranslatorSetupFile Version="1.0">
+
+    <Import>
+        <Unit>mil</Unit>
+        <Flatten>0</Flatten>
+        <Layers>
+        </Layers>
+    </Import>
+  
+    <Export>
+        <FileFormat>DXF</FileFormat>
+        <AutocadVersion>Autocad 2004</AutocadVersion>
+        <PathsAsPolygons>1</PathsAsPolygons>
+        <HoleFormat>Holes As Cutlines</HoleFormat>
+        <Layers>
+        </Layers>
+    </Export>
+
+</AdsTranslatorSetupFile>

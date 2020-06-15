@@ -1,0 +1,43 @@
+; Top Design: "branchline_coupler_lib:cell_1:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="branchline_coupler_lib:cell_1:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Step=0.1 GHz Center=10 GHz Span=4 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+model MSub1 MSUB H=10.0 mil Er=9.6 Mur=1 Cond=4.1e7 Hu=3.93701e+34 mil T=0.5 mil TanD=0.0001 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+MLIN2:TL1  N__8 N__1 Subst="MSub1" W=W2 mil L=L1 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL2  N__7 N__9 Subst="MSub1" W=W2 mil L=L1 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL3  N__3 N__4 Subst="MSub1" W=W1 mil L=L2 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL4  N__12 N__2 Subst="MSub1" W=W1 mil L=L2 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+Port:TermG3  P3 0 Num=3 Z=50 Ohm Noise=yes 
+Port:TermG4  P4 0 Num=4 Z=50 Ohm Noise=yes 
+Port:TermG2  P2 0 Num=2 Z=50 Ohm Noise=yes 
+Port:TermG1  P1 0 Num=1 Z=50 Ohm Noise=yes 
+MTEE_ADS:Tee1  N__16 N__8 N__3 Subst="MSub1" W1=W1 mil W2=W2 mil W3=W1 mil 
+MTEE_ADS:Tee2  N__23 N__7 N__4 Subst="MSub1" W1=W1 mil W2=W2 mil W3=W1 mil 
+MTEE_ADS:Tee3  N__14 N__1 N__12 Subst="MSub1" W1=W1 mil W2=W2 mil W3=W1 mil 
+MTEE_ADS:Tee4  N__0 N__9 N__2 Subst="MSub1" W1=W1 mil W2=W2 mil W3=W1 mil 
+
+L1=111.63 tune{ 55.815 to 167.445 by 5 }
+
+L2=115.4
+
+W1=9.894291
+
+W2=18.61
+MLIN2:TL5  P1 N__16 Subst="MSub1" W=W1 mil L=L1 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL6  N__14 P2 Subst="MSub1" W=W1 mil L=L1 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL7  N__0 P3 Subst="MSub1" W=W1 mil L=L1 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL8  P4 N__23 Subst="MSub1" W=W1 mil L=L1 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
