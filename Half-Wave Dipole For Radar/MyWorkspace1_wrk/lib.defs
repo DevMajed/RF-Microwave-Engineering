@@ -1,0 +1,3 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+DEFINE MyLibrary1_lib MyLibrary1_lib
+ASSIGN MyLibrary1_lib libMode shared

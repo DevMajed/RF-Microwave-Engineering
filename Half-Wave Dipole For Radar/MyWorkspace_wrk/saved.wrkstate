@@ -1,0 +1,10 @@
+<!DOCTYPE SaveWorkspaceState>
+<SaveWorkspaceState>
+    <Windows>
+        <Layout cell="cell_1" y1="0" lib="MyLibrary_lib" geom="1,0,0,1910,0,1917,2052,3840,2160" view="layout" height="2052" x1="1910" width="1917"/>
+        <Layout cell="cell_2" y1="1458" lib="MyLibrary_lib" geom="1,0,1,-161,1458,1497,666,3840,2160" view="layout" height="666" x1="-161" width="1497"/>
+        <Substrate file="substrate1" y1="1356" lib="MyLibrary_lib" geom="1,0,1,345,1356,1375,745,3840,2160" height="745" x1="345" width="1375"/>
+        <DDS name="cell_2.dds"/>
+    </Windows>
+    <MainWindowTab tab="1"/>
+</SaveWorkspaceState>

@@ -1,0 +1,17 @@
+<!DOCTYPE Materials>
+<Materials>
+    <Conductors>
+        <Conductor imag="" electron_path="" tnom="" thermal_conductivity_in_z="" tc1="" real="5.8e7 Siemens/m" tc2="" name="Copper" mur_real="1" heat_capacity="2.49E+06" parmtype="1" mur_imag="" thermal_conductivity="401"/>
+        <Conductor imag="" electron_path="" tnom="" thermal_conductivity_in_z="" tc1="" real="0.71e7 Siemens/m" tc2="" name="Typical_solder" mur_real="1" heat_capacity="" parmtype="1" mur_imag="" thermal_conductivity=""/>
+        <Conductor imag="" electron_path="" tnom="" thermal_conductivity_in_z="" tc1="" real="4.1e7 Siemens/m" tc2="" name="Gold" mur_real="1" heat_capacity="2.49E+06" parmtype="1" mur_imag="" thermal_conductivity="318"/>
+    </Conductors>
+    <Dielectrics>
+        <Dielectric loss_type="1" highfreq="1 THz" electron_path="" thermal_conductivity_in_z="" er_imag="" lowfreq="1 KHz" name="FR_4_Core" er_loss="0.01" mur_real="1" heat_capacity="" er_real="4.6" mur_imag="" thermal_conductivity="" valuefreq="1 GHz"/>
+        <Dielectric loss_type="1" highfreq="1 THz" electron_path="" thermal_conductivity_in_z="" er_imag="" lowfreq="1 KHz" name="FR_4_Prepreg" er_loss="0.01" mur_real="1" heat_capacity="" er_real="4.6" mur_imag="" thermal_conductivity="" valuefreq="1 GHz"/>
+        <Dielectric loss_type="1" highfreq="1 THz" electron_path="" thermal_conductivity_in_z="" er_imag="" lowfreq="1 KHz" name="SolderMask" er_loss="" mur_real="1" heat_capacity="" er_real="3.3" mur_imag="" thermal_conductivity="" valuefreq="1 GHz"/>
+        <Dielectric loss_type="1" highfreq="1 THz" electron_path="" thermal_conductivity_in_z="" er_imag="" lowfreq="1 KHz" name="Alumina" er_loss="" mur_real="1" heat_capacity="1.73E+06" er_real="9.6" mur_imag="" thermal_conductivity="25.25" valuefreq="1 GHz"/>
+        <Dielectric loss_type="1" highfreq="1 THz" electron_path="" thermal_conductivity_in_z="" er_imag="" lowfreq="1 KHz" name="Rogers_RT_Duroid5880" er_loss="0.0009" mur_real="1" heat_capacity="" er_real="2.20" mur_imag="" thermal_conductivity="" valuefreq="10.0 GHz"/>
+    </Dielectrics>
+    <Semiconductors/>
+    <roughness/>
+</Materials>

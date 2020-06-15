@@ -1,0 +1,55 @@
+; Top Design: "MyLibrary1_lib:cell_1:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary1_lib:cell_1:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=7.0 GHz Stop=13 GHz Step=0.05 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Port:TermG1  P1 0 Num=1 Z=50 Ohm Noise=yes 
+Port:TermG4  P4 0 Num=4 Z=50 Ohm Noise=yes 
+model MSub1 MSUB H=20 mil Er=2.2 Mur=1 Cond=4.1e7 Hu=3.93701e+34 mil T=0.15 mil TanD=0 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+MLIN2:TL1  N__14 N__4 Subst="MSub1" W=W3 mil L=L2 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL2  N__12 N__13 Subst="MSub1" W=W1 mil L=L1 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL3  N__15 N__5 Subst="MSub1" W=W3 mil L=L2 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL4  N__1 N__0 Subst="MSub1" W=W1 mil L=L1 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MTEE:Tee1  N__17 N__12 N__14 Subst="MSub1" W1=W2 mil W2=W1 mil W3=W3 mil 
+MTEE:Tee2  N__1 N__18 N__4 Subst="MSub1" W1=W1 mil W2=W2 mil W3=W3 mil 
+MTEE:Tee3  N__13 N__25 N__15 Subst="MSub1" W1=W1 mil W2=W2 mil W3=W3 mil 
+MTEE:Tee4  N__28 N__0 N__5 Subst="MSub1" W1=W2 mil W2=W1 mil W3=W3 mil 
+
+W1=65.505 tune{ 50.505 to 151.515 by 1 }
+L2=83.6245 tune{ 70 to 244.8735 by 1 }
+W3=45.1065 tune{ 20 to 93.1065 by 1 }
+W2=67.853 tune{ 30.9265 to 92.7795 by 1 }
+L1=219.851 tune{ 99.4255 to 298.2765 by 1 }
+outW=69.505 tune{ 50.505 to 151.515 by 1 }
+outL=119.851 tune{ 99.4255 to 298.2765 by 1 }
+MLIN2:TL11  P4 N__18 Subst="MSub1" W=outW mil L=outL mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL12  P1 N__17 Subst="MSub1" W=outW mil L=outL mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL14  N__6 P2 Subst="MSub1" W=outW mil L=outL mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL13  N__8 P3 Subst="MSub1" W=outW mil L=outL mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+Port:TermG2  P2 0 Num=2 Z=50 Ohm Noise=yes 
+Port:TermG3  P3 0 Num=3 Z=50 Ohm Noise=yes 
+MTEE:Tee5  N__21 N__20 N__11 Subst="MSub1" W1=W2 mil W2=W1 mil W3=W3 mil 
+MTEE:Tee6  N__22 N__19 N__26 Subst="MSub1" W1=W1 mil W2=W2 mil W3=W3 mil 
+MTEE:Tee7  N__23 N__6 N__27 Subst="MSub1" W1=W1 mil W2=W2 mil W3=W3 mil 
+MTEE:Tee8  N__8 N__16 N__24 Subst="MSub1" W1=W2 mil W2=W1 mil W3=W3 mil 
+MLIN2:TL15  N__33 N__19 Subst="MSub1" W=outW mil L=outL mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL16  N__30 N__21 Subst="MSub1" W=outW mil L=outL mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL17  N__11 N__26 Subst="MSub1" W=W3 mil L=L2 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL18  N__20 N__23 Subst="MSub1" W=W1 mil L=L1 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL19  N__27 N__24 Subst="MSub1" W=W3 mil L=L2 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL20  N__22 N__16 Subst="MSub1" W=W1 mil L=L1 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL21  N__28 N__33 Subst="MSub1" W=outW mil L=outL mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL22  N__25 N__30 Subst="MSub1" W=outW mil L=outL mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 

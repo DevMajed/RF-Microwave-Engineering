@@ -1,0 +1,11 @@
+
+hpeesofsim (*) 491.update1.0 Mar 16 2019, MINT version 4
+    (64-bit windows built: Sat Mar 16, 2019 19:44:49 +0000)
+
+
+SP SP1[1] <MyLibrary1_lib:SA_BLCoupler2_cell_1:schematic>   freq=(5 GHz->15 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     1.97 seconds.
+

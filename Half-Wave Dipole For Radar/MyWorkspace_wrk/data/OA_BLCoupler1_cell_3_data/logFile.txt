@@ -1,0 +1,18 @@
+
+hpeesofsim (*) 490.shp Nov 12 2018, MINT version 4
+    (64-bit windows built: Tue Nov 13, 2018 02:20:54 +0000)
+
+
+OPTIM Optim1[1] <MyLibrary_lib:OA_BLCoupler1_cell_3:schematic>  optIter=(0->25)
+
+SP Optim1[1].SP1[0] <MyLibrary_lib:OA_BLCoupler1_cell_3:schematic>  optIter=0  freq=9 GHz
+
+Iteration/Trial #0:
+  CurrentEF: 1
+  Optimization variables:
+    Delta = 0
+Optim1[1] terminated due to no more improvement 
+
+Resource usage:
+  Total stopwatch time     =     1.83 seconds.
+

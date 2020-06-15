@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<port_setup version="1.1">
+  <port_list>
+    <port id="1">
+      <name>P1</name>
+      <plus_pin>P1</plus_pin>
+      <impedance>
+        <real>50</real>
+        <imag>0</imag>
+      </impedance>
+    </port>
+    <port id="2">
+      <name>P2</name>
+      <plus_pin>P2</plus_pin>
+      <impedance>
+        <real>50</real>
+        <imag>0</imag>
+      </impedance>
+    </port>
+  </port_list>
+</port_setup>

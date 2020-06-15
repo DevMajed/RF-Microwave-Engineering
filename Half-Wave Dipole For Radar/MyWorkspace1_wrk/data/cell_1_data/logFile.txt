@@ -1,0 +1,11 @@
+
+hpeesofsim (*) 491.update1.0 Mar 16 2019, MINT version 4
+    (64-bit windows built: Sat Mar 16, 2019 19:44:49 +0000)
+
+
+SP SP1[1] <MyLibrary1_lib:cell_1:schematic>   freq=(7 GHz->13 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     1.57 seconds.
+

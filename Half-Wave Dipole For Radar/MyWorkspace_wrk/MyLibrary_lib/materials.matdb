@@ -1,0 +1,17 @@
+<!DOCTYPE Materials>
+<Materials>
+    <Conductors>
+        <Conductor parmtype="1" mur_real="1" name="Copper" real="5.8e7 Siemens/m" thermal_conductivity_in_z="" imag="" electron_path="" tc1="" thermal_conductivity="401" heat_capacity="2.49E+06" tnom="" tc2="" mur_imag=""/>
+        <Conductor parmtype="1" mur_real="1" name="Typical_solder" real="0.71e7 Siemens/m" thermal_conductivity_in_z="" imag="" electron_path="" tc1="" thermal_conductivity="" heat_capacity="" tnom="" tc2="" mur_imag=""/>
+        <Conductor parmtype="1" mur_real="1" name="Gold" real="4.1e7 Siemens/m" thermal_conductivity_in_z="" imag="" electron_path="" tc1="" thermal_conductivity="318" heat_capacity="2.49E+06" tnom="" tc2="" mur_imag=""/>
+    </Conductors>
+    <Dielectrics>
+        <Dielectric lowfreq="1 KHz" mur_real="1" name="FR_4_Core" valuefreq="1 GHz" highfreq="1 THz" thermal_conductivity_in_z="" loss_type="1" er_imag="" er_loss="0.01" er_real="4.6" electron_path="" thermal_conductivity="" heat_capacity="" mur_imag=""/>
+        <Dielectric lowfreq="1 KHz" mur_real="1" name="FR_4_Prepreg" valuefreq="1 GHz" highfreq="1 THz" thermal_conductivity_in_z="" loss_type="1" er_imag="" er_loss="0.01" er_real="4.6" electron_path="" thermal_conductivity="" heat_capacity="" mur_imag=""/>
+        <Dielectric lowfreq="1 KHz" mur_real="1" name="SolderMask" valuefreq="1 GHz" highfreq="1 THz" thermal_conductivity_in_z="" loss_type="1" er_imag="" er_loss="" er_real="3.3" electron_path="" thermal_conductivity="" heat_capacity="" mur_imag=""/>
+        <Dielectric lowfreq="1 KHz" mur_real="1" name="Alumina" valuefreq="1 GHz" highfreq="1 THz" thermal_conductivity_in_z="" loss_type="1" er_imag="" er_loss="" er_real="9.6" electron_path="" thermal_conductivity="25.25" heat_capacity="1.73E+06" mur_imag=""/>
+        <Dielectric lowfreq="1 KHz" mur_real="1" name="Rogers_RT_Duroid5880" valuefreq="10.0 GHz" highfreq="1 THz" thermal_conductivity_in_z="" loss_type="1" er_imag="" er_loss="0.0009" er_real="2.20" electron_path="" thermal_conductivity="" heat_capacity="" mur_imag=""/>
+    </Dielectrics>
+    <Semiconductors/>
+    <roughness/>
+</Materials>

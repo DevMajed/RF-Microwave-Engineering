@@ -1,0 +1,16 @@
+#Momentum: B.13.00.433 (*) built: Oct 24 2018 
+#Momentum Date and Time: Sat Dec 14 11:10:12 2019
+
+Overall database status : 1 (file present and valid)
+
+Frequency range : from 0.02306921205 GHz to 15 GHz.
+
+Requested frequency range : from 5 GHz to 15 GHz.
+
+Individual status fields : (0 = FALSE, 1 = TRUE)
+ File exists             : 1
+ Substrates match        : 1
+ Frequency-range matches : 1
+
+Corresponding potentialpath : C:\Users\Michael/
+Corresponding potentialname : C:\Users\Michael\\substrates\0000.sdb

@@ -1,0 +1,10 @@
+create_item("DA_BLCoupler2_cell_1","Branch-Line Coupler","DA_BLCoupler",16,-1,"BLCoupler.bmp","Component Parameters",NULL,"%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","DA_BLCoupler2_cell_1","%t%b%r%38?%:\n%39?all_parm%A%:%30?%s%:%k%?[%1i]%;=%s%;%;%;%e%e%;","BLCoupler",3,NULL,0,
+create_parm("Subst","Substrate Instance Name",262144,"StringAndReferenceFormSet",-2,prm("StringAndReference","\"MSub1\"")),
+create_parm("F","Center Frequency",65536,"StdFormSet",0,prm("StdForm","1 GHz")),
+create_parm("DeltaF","Total Frequency Bandwidth",65536,"StdFormSet",0,prm("StdForm","0.5 GHz")),
+create_parm("Zo","Characteristic Impedance",65536,"StdFormSet",1,prm("StdForm","50 Ohm")),
+create_parm("ResponseType","Type of Frequency Response",134656,"DA_QWFormSet",-1,prm("DA_ChebyshevForm")),
+create_parm("N","Number of Coupler Sections (set N=0 to compute N)",131072,"StdFormSet",-1,prm("StdForm","0")),
+create_parm("Rmax","Maximum Voltage Reflection Coefficient on Input",68608,"StdFormSet",-1,prm("StdForm","0.5")),
+create_parm("C","Coupling Coefficient (dB > 0)",65536,"StdFormSet",13,prm("StdForm","3")),
+create_parm("Delta","Length Added to Branches for Tuning",65536,"StdFormSet",5,prm("StdForm","0")));

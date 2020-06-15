@@ -1,0 +1,41 @@
+; Top Design: "MyLibrary_lib:SA_BLCoupler1_cell_3:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary_lib:SA_BLCoupler1_cell_3:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: MyLibrary_lib
+; Cell Name: DA_BLCoupler1_cell_3
+; View Name: schematic
+define DA_BLCoupler1_cell_3 ( P1  P2  P3  P4 ) 
+parameters  Subst="MSub1"  F=1 GHz  DeltaF=0.5 GHz  Zo=50 Ohm  ResponseType=3  N=0  Rmax=0.5  C=3  Delta=0 
+MLIN2:TL4  N__7 N__1 Subst="MSub1" W=100.924 mil L=172.497 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MTEE:Tee4  P3 N__1 N__2 Subst="MSub1" W1=61.805 mil W2=100.924 mil W3=62.027 mil 
+MLIN2:TL3  N__3 N__2 Subst="MSub1" W=62.027 mil L=137.285 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL2  N__12 N__5 Subst="MSub1" W=100.924 mil L=172.497 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MTEE:Tee3  N__5 P2 N__3 Subst="MSub1" W1=100.924 mil W2=61.805 mil W3=62.027 mil 
+MTEE:Tee2  N__7 P4 N__9 Subst="MSub1" W1=100.924 mil W2=61.805 mil W3=62.027 mil 
+MLIN2:TL1  N__10 N__9 Subst="MSub1" W=62.027 mil L=137.285 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MTEE:Tee1  P1 N__12 N__10 Subst="MSub1" W1=61.805 mil W2=100.924 mil W3=62.027 mil 
+end DA_BLCoupler1_cell_3
+
+aele F=9 GHz;DeltaF=0.5 GHz;Zo=50 Ohm;ResponseType=3;N=0;Rmax=0.5;C=3 dB;Delta=0 mil;
+DA_BLCoupler1_cell_3:DA_BLCoupler1  N__0 N__1 N__2 N__3 Subst="MSub1" F=9 GHz DeltaF=0.5 GHz Zo=50 Ohm ResponseType=3 N=0 Rmax=0.5 C=3 dB Delta=0 mil 
+Port:Term1  N__0 0 Num=1 Z=50 Ohm Noise=yes 
+Port:Term2  N__1 0 Num=2 Z=50 Ohm Noise=yes 
+Port:Term3  N__2 0 Num=3 Z=50 Ohm Noise=yes 
+Port:Term4  N__3 0 Num=4 Z=50 Ohm Noise=yes 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no CalcGroupDelay=yes GroupDelayAperture=1e-4 \
+FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=5 GHz Stop=15 GHz Step=20 MHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+model MSub1 MSUB H=20 mil Er=2.2 Mur=1 Cond=4.7e7 Hu=3.93701e+34 mil T=0.15 mil TanD=0 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
