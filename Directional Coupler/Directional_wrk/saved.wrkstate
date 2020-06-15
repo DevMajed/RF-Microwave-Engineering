@@ -1,0 +1,9 @@
+<!DOCTYPE SaveWorkspaceState>
+<SaveWorkspaceState>
+    <Windows>
+        <Schematic x1="-8" cell="cell_1" geom="1,0,2,167,166,1187,578,1440,900" lib="FixedProject5_lib" y1="-8" width="1440" view="schematic" height="847"/>
+        <Layout x1="-8" cell="cell_1" geom="1,0,3,242,34,738,717,1440,900" lib="FixedProject5_lib" y1="-8" width="1440" view="layout" height="847"/>
+        <DDS name="cell_1.dds"/>
+    </Windows>
+    <MainWindowTab tab="1"/>
+</SaveWorkspaceState>

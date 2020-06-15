@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      malharbi
+HostName                       w10englc-009.UMDAR.umassd.edu
+ProcessIdentifier              8580
+ProcessCreationTime_UTC        1571870859
+ProcessCreationTime_Readable   Wed Oct 23 18:47:39 2019 Eastern Daylight Time
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         U:\FixedProject5_wrk\FixedProject5_lib\cell_1\layout\layout.oa.cdslck
+TimeEditLocked                 Wed Oct 23 18:47:54 2019 Eastern Daylight Time

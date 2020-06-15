@@ -1,0 +1,39 @@
+Momentum Server logfile: momServer.log
+
+EM Model generation from "FixedProject5_lib:cell_1:emModel"
+  parameterNames = list("S1","W1")
+  parameterValues = list("23.20000000000000","64.80000000000000")
+  topLevel design name = "FixedProject5_lib:cell_1:layout_libserver"
+  instance name = "X1"
+  processID = "10600@SENG-214-15"
+  visible = FALSE
+Connected to external process by processID
+..handle = 17
+..pid = 10600@SENG-214-15
+..name = libserver
+Creating work design FixedProject5_lib:cell_1:layout_libserver_intermediate
+..new work design opened
+..inserting instance of FixedProject5_lib:cell_1:layout
+..promoting instance pins and ports
+Successfully created the intermediate work design
+Creating work design FixedProject5_lib:cell_1:layout_libserver
+..new work design opened
+..inserting instance of FixedProject5_lib:cell_1:layout_libserver_intermediate
+..promoting instance pins and ports
+Successfully created the work design
+Successfully created the associated schematic of the work design
+Starting EM simulation for design: FixedProject5_lib:cell_1:layout_libserver
+  Contains instance of : FixedProject5_lib:cell_1:layout
+  EM setup view name   : emSetup_libserver
+  EM model design name   : FixedProject5_lib:cell_1:emModel
+..disable simulation log popup
+..ERROR: Analysis "Solve" (undefined_4294967295) of design FixedProject5_lib:cell_1:layout_libserver was unsuccessful because the communication with the job manager failed.
+..simulation undefined_4294967295 ended
+EM simulation failed
+..deleting layout_libserver view for work design
+..deleting layout_libserver_intermediate view for work design
+..deleting schematic_libserver_intermediate view for work design
+..deleting schematic_libserver view for work design
+..deleting emSetup_libserver view for work design
+..deleting simulation directory for work design
+..sending DONE to parent

@@ -1,0 +1,3 @@
+create_item("cell_1","cell_1","X",16,-1,NULL,"Component Parameters",NULL,"%43?global %;%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","cell_1","%t%b%r%38?%:\n%30?%s%:%k%?[%1i]%;=%s%;%;%e%e%;","",3,NULL,0,
+create_parm("S1","Subnetwork 25.432047",66560,"StdFormSet",-1,prm("StdForm","25.432047 ")),
+create_parm("W1","Subnetwork 60.558268",66560,"StdFormSet",-1,prm("StdForm","60.558268 ")));
