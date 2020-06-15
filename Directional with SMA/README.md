@@ -7,7 +7,7 @@ very important in microwave systems, and very difficult to design and construct.
 Two of the reasons for this difficulty are our desire for the device to be: 
 1.  Matched 
 2.  Lossless  \
-Without going into to much math, here are the solutions for the drectional four ports coupler \
+Without going into to much math, here are the solutions for the drectional four ports coupler 
 
 The symmetric solutions is: 
 
