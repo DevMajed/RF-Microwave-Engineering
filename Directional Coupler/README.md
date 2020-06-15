@@ -25,3 +25,36 @@ Here we can say that port 1 is the input port, port 2 is the through port, port 
 <img width="650" alt="image" src="https://user-images.githubusercontent.com/66625688/84614203-679d2980-ae93-11ea-9f49-a48ec86969b5.png">
 
 
+# The Project statment 
+
+<img width="739" alt="Screen Shot 2020-06-14 at 11 51 42 AM" src="https://user-images.githubusercontent.com/66625688/84614297-adf28880-ae93-11ea-8d2d-8bae392a149f.png">
+
+# Circuits and Results
+
+The schematic
+
+<img width="917" alt="image" src="https://user-images.githubusercontent.com/66625688/84614349-d5495580-ae93-11ea-8e83-e9d669cf10e6.png">
+
+
+
+Momentum layout
+
+<img width="546" alt="image" src="https://user-images.githubusercontent.com/66625688/84614372-eb571600-ae93-11ea-96a2-47bb3aa072d8.png">
+
+Momentum Results
+
+<img width="930" alt="image" src="https://user-images.githubusercontent.com/66625688/84614414-075ab780-ae94-11ea-8e8e-2aeb14501e6e.png">
+
+generated layout
+
+<img width="777" alt="image" src="https://user-images.githubusercontent.com/66625688/84614442-25281c80-ae94-11ea-883b-d01c106b6282.png">
+
+
+Equation bsed
+
+<img width="831" alt="image" src="https://user-images.githubusercontent.com/66625688/84614452-32dda200-ae94-11ea-8fba-85325503c27b.png">
+
+
+
+
+
