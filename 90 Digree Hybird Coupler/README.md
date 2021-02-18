@@ -1,4 +1,4 @@
-# 90 Digree Hybird (branchline) Coupler
+# 990 Degree Hybrid Coupler (branchline)
 
 # Fast intro
 There are two different types of ideal 4-port 3dB couplers:\
